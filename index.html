@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <style>
+        table {
+            width: 800px;
+        }
+
+        td,
+        th {
+            background-color: rgb(20, 180, 180);
+            text-align: center;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+
+        /* Apply different shapes to columns */
+        td:nth-child(1),
+        th:nth-child(1) {
+            border-radius: 50%;
+        }
+
+        td:nth-child(2),
+        th:nth-child(2) {
+            border-radius: 0;
+        }
+
+        td:nth-child(3),
+        th:nth-child(3) {
+            border-radius: 0;
+        }
+
+        /* Apply rhombus shape to the last column */
+        td:nth-child(3),
+        th:nth-child(3) {
+            transform: rotate(4deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
